@@ -16,6 +16,7 @@ function NavBar() {
               width={40}
               height={40}
               className=" rounded-full"
+              alt=""
             />
             <button onClick={() => signOut("github")}>Sign out</button>
           </div>
@@ -28,7 +29,7 @@ function NavBar() {
       <div className="flex justify-between max-w-[90%] mx-auto py-4 h-14 ">
         <h1>Exp-Tkr</h1>
         <div>
-          <button onClick={() => signIn("github")}>Sign in</button>
+          <button onClick={() => signIn("google")}>Sign in</button>
         </div>
       </div>
     </div>
