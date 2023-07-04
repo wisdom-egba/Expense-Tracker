@@ -8,7 +8,7 @@ function NavBar() {
   if (status === "authenticated") {
     return (
       <div className="bg-slate-900 w-full h-14">
-        <div className="flex justify-between max-w-[90%] mx-auto py-4 h-14 ">
+        <div className="flex justify-between max-w-[90%] mx-auto py-4 h-14 text-gray-300 ">
           <h1>Exp-Tkr</h1>
           <div className="flex items-center gap-2">
             <Image

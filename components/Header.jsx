@@ -7,7 +7,7 @@ function Header() {
       <h1>Login to get started</h1>
       <button
         onClick={() => signIn("github")}
-        className="flex items-center justify-center py-2 px-3 gap-2 rounded-lg border outline-none hover:scale-105"
+        className="flex items-center justify-center py-2 px-3 gap-2 rounded-lg border outline-none hover:scale-105 border-slate-950"
       >
         <BsGithub size={25} /> Continue with GitHub
       </button>
@@ -15,7 +15,7 @@ function Header() {
       <div>
         <button
           onClick={() => signIn("google")}
-          className="flex items-center justify-center py-2 px-3 gap-2 rounded-lg border outline-none hover:scale-105"
+          className="flex items-center justify-center py-2 px-3 gap-2 rounded-lg border outline-none hover:scale-105 border-slate-950"
         >
           <BsGoogle size={25} />
           Continue with Google
