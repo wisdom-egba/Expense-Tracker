@@ -70,7 +70,7 @@ export default function Home() {
     return (
       <>
         <main className="flex min-h-screen flex-col items-center justify-between md:p-24 p-6">
-          <div className="z-10 w-full md:max-w-5xl items-center justify-between font-mono text-sm lg:flex">
+          <div className="z-10 w-full md:max-w-5xl items-center justify-between font-mono text-sm  ">
             <h1 className="text-4xl p-4 text-center">Expense Tracker</h1>
 
             <div className=" bg-gray-400 p-5 rounded-lg">
