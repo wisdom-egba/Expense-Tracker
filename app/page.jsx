@@ -66,6 +66,13 @@ export default function Home() {
   const deleteItem = async (id) => {
     await deleteDoc(doc(db, "items", id))
   }
+  if (status === "loading") {
+    return (
+      <p className="h-[100vh] flex justify-center items-center">
+        Loading...please wait
+      </p>
+    )
+  }
   if (status === "authenticated") {
     return (
       <>
