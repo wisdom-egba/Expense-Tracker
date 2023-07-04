@@ -68,9 +68,9 @@ export default function Home() {
   }
   if (status === "loading") {
     return (
-      <p className="h-[100vh] flex justify-center items-center">
-        Loading...please wait
-      </p>
+      <div className="h-[100vh] flex justify-center items-center">
+        <p>Loading...please wait</p>
+      </div>
     )
   }
   if (status === "authenticated") {
@@ -119,7 +119,7 @@ export default function Home() {
                   key={id}
                   className="flex justify-between my-6 p-2 rounded-md capitalize items-center bg-slate-950"
                 >
-                  <div className=" w-full flex justify-between p-2">
+                  <div className=" w-full flex justify-between p-2 text-gray-300">
                     <span>{item.name}</span>
                     <span>${item.price}</span>
                   </div>
@@ -127,7 +127,7 @@ export default function Home() {
                     onClick={() => deleteItem(item.id)}
                     className="ml-8 p-4 border-l-2 border-gray-700 hover:text-red-500"
                   >
-                    <BsTrash className=" cursor-pointer" />
+                    <BsTrash className=" cursor-pointer text-white" />
                   </div>
                 </li>
               ))}
